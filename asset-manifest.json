@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Supermercado-Felipe-Gennari-Exp1S1/static/css/main.75b778ac.css",
+    "main.js": "/Supermercado-Felipe-Gennari-Exp1S1/static/js/main.8e511fd1.js",
+    "static/js/453.ee0a2af1.chunk.js": "/Supermercado-Felipe-Gennari-Exp1S1/static/js/453.ee0a2af1.chunk.js",
+    "index.html": "/Supermercado-Felipe-Gennari-Exp1S1/index.html",
+    "main.75b778ac.css.map": "/Supermercado-Felipe-Gennari-Exp1S1/static/css/main.75b778ac.css.map",
+    "main.8e511fd1.js.map": "/Supermercado-Felipe-Gennari-Exp1S1/static/js/main.8e511fd1.js.map",
+    "453.ee0a2af1.chunk.js.map": "/Supermercado-Felipe-Gennari-Exp1S1/static/js/453.ee0a2af1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75b778ac.css",
+    "static/js/main.8e511fd1.js"
+  ]
+}
