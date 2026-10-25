@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Supermercado Felipe — Sistema de Gestión de Inventario
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio web de gestión de inventario para un supermercado, desarrollado con **React** y **React Router** como una Single Page Application (SPA).
 
-## Available Scripts
+**Evaluación Formativa 1 — Desarrollo Frontend II (PFY2202), Semana 1**
 
-In the project directory, you can run:
+## Descripción
 
-### `npm start`
+La aplicación cuenta con una página principal para la gestión del inventario (listado de productos con control de stock) y un menú inferior que permite navegar sin recargar la página hacia las secciones informativas del sitio:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Inventario** (`/`): lista de productos con categoría, precio y stock, con botones para aumentar o disminuir unidades y alertas de stock bajo.
+- **Quiénes somos** (`/quienes-somos`): misión, visión y valores del supermercado.
+- **Nuestras tiendas** (`/nuestras-tiendas`): sucursales con dirección, ciudad y horario.
+- **Contáctanos** (`/contactanos`): datos de contacto y formulario de mensajes.
+- **Cómo comprar** (`/como-comprar`): pasos para realizar una compra.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías utilizadas
+
+- React 19 (creado con [Create React App](https://github.com/facebook/create-react-app))
+- React Router DOM (enrutamiento del lado del cliente)
+- HTML, CSS y JavaScript
+
+## Requisitos previos
+
+- [Node.js](https://nodejs.org/) instalado (versión 18 o superior recomendada)
+
+## Instalación y ejecución
+
+En la carpeta del proyecto, ejecuta:
+
+```bash
+npm install
+```
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+npm start
+```
+
+La aplicación se abrirá automáticamente en [http://localhost:3000](http://localhost:3000). Los cambios en el código se recargan automáticamente en el navegador.
+
+## Otros comandos disponibles
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia el ejecutor de pruebas en modo interactivo.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Genera la versión optimizada para producción en la carpeta `build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura del proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+src/
+├── App.js                  # Configuración de React Router y layout principal
+├── App.css                 # Estilos globales
+├── components/
+│   └── BottomNav.js        # Menú inferior de navegación
+├── data/
+│   └── products.js         # Datos iniciales del inventario
+└── pages/
+    ├── Home.js             # Página principal: gestión de inventario
+    ├── QuienesSomos.js
+    ├── NuestrasTiendas.js
+    ├── Contactanos.js
+    ├── ComoComprar.js
+    └── NotFound.js         # Página para rutas no encontradas
+```
