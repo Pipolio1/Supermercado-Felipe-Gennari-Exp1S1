@@ -4,6 +4,8 @@ Sitio web de gestión de inventario para un supermercado, desarrollado con **Rea
 
 **Evaluación Formativa 1 — Desarrollo Frontend II (PFY2202), Semana 1**
 
+**Sitio en producción (GitHub Pages):** https://pipolio1.github.io/Supermercado-Felipe-Gennari-Exp1S1/
+
 ## Descripción
 
 La aplicación cuenta con una página principal para la gestión del inventario (listado de productos con control de stock) y un menú inferior que permite navegar sin recargar la página hacia las secciones informativas del sitio:
@@ -49,6 +51,12 @@ Inicia el ejecutor de pruebas en modo interactivo.
 ### `npm run build`
 
 Genera la versión optimizada para producción en la carpeta `build`.
+
+### `npm run deploy`
+
+Compila el proyecto y publica la carpeta `build` en la rama `gh-pages`, actualizando el sitio en GitHub Pages.
+
+> **Nota:** el proyecto usa `HashRouter` de React Router para que la navegación funcione correctamente en GitHub Pages, donde no es posible configurar el servidor para rutas de una SPA.
 
 ## Estructura del proyecto
 
