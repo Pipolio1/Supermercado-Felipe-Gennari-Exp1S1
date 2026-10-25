@@ -4,7 +4,11 @@ Sitio web de gestión de inventario para un supermercado, desarrollado con **Rea
 
 **Evaluación Formativa 1 — Desarrollo Frontend II (PFY2202), Semana 1**
 
-**Sitio en producción (GitHub Pages):** https://pipolio1.github.io/Supermercado-Felipe-Gennari-Exp1S1/
+## Sitio en línea
+
+La aplicación está desplegada en GitHub Pages y disponible públicamente en:
+
+**https://pipolio1.github.io/Supermercado-Felipe-Gennari-Exp1S1/**
 
 ## Descripción
 
@@ -21,26 +25,40 @@ La aplicación cuenta con una página principal para la gestión del inventario 
 - React 19 (creado con [Create React App](https://github.com/facebook/create-react-app))
 - React Router DOM (enrutamiento del lado del cliente)
 - HTML, CSS y JavaScript
+- GitHub Pages (despliegue)
 
-## Requisitos previos
+## Desarrollo local
 
-- [Node.js](https://nodejs.org/) instalado (versión 18 o superior recomendada)
+Para trabajar en el proyecto en tu propio computador necesitas [Node.js](https://nodejs.org/) instalado (versión 18 o superior).
 
-## Instalación y ejecución
-
-En la carpeta del proyecto, ejecuta:
+En la carpeta del proyecto, instala las dependencias:
 
 ```bash
 npm install
 ```
 
-Para iniciar el servidor de desarrollo:
+Luego inicia el servidor de desarrollo:
 
 ```bash
 npm start
 ```
 
-La aplicación se abrirá automáticamente en [http://localhost:3000](http://localhost:3000). Los cambios en el código se recargan automáticamente en el navegador.
+La aplicación se abrirá en [http://localhost:3000](http://localhost:3000). Esta es una versión local solo para desarrollo: los cambios en el código se recargan automáticamente en el navegador. El sitio público en GitHub Pages no se ve afectado hasta que se publique una nueva versión (ver sección siguiente).
+
+## Publicar cambios en GitHub Pages
+
+Después de hacer cambios en el código, actualiza el sitio en línea con:
+
+```bash
+git add -A
+git commit -m "descripción del cambio"
+git push
+npm run deploy
+```
+
+`npm run deploy` compila el proyecto y publica la carpeta `build` en la rama `gh-pages`, actualizando el sitio en GitHub Pages.
+
+> **Nota:** el proyecto usa `HashRouter` de React Router para que la navegación funcione correctamente en GitHub Pages, donde no es posible configurar el servidor para rutas de una SPA.
 
 ## Otros comandos disponibles
 
@@ -51,12 +69,6 @@ Inicia el ejecutor de pruebas en modo interactivo.
 ### `npm run build`
 
 Genera la versión optimizada para producción en la carpeta `build`.
-
-### `npm run deploy`
-
-Compila el proyecto y publica la carpeta `build` en la rama `gh-pages`, actualizando el sitio en GitHub Pages.
-
-> **Nota:** el proyecto usa `HashRouter` de React Router para que la navegación funcione correctamente en GitHub Pages, donde no es posible configurar el servidor para rutas de una SPA.
 
 ## Estructura del proyecto
 
